@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}Home | PERSONAL AI AGENT SBC{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <h2>Welcome to PERSONAL AI AGENT SBC</h2>
+    <p>Your Smart Personal AI Assistant</p>
+
+    <button id="startBtn">Start Chat</button>
+</section>
+
+<section class="chat-box">
+
+    <h3>AI Chat</h3>
+
+    <div id="chatArea">
+        <p><strong>AI:</strong> Hello! How can I help you today?</p>
+    </div>
+
+    <textarea
+        id="message"
+        placeholder="Type your message..."
+    ></textarea>
+
+    <br><br>
+
+    <button id="sendBtn">
+        Send
+    </button>
+
+</section>
+
+{% endblock %}
